@@ -5,3 +5,8 @@ function goTopage(input) {
           tablink.show();
     }
 }
+
+function toggleMenu(element){
+    document.querySelector(".navbar").classList.toggle("active");
+    element.classList.toggle("open");
+}

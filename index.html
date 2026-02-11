@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modern Furnitures Store</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <h2>Modern Furniture</h2>
@@ -16,50 +19,64 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contactus">Contact Us</a></li>
         </ul>
-            <button class="btn"><a href="#login">Login</a></button>
-            <button class="btn2"><a href="signin">Sign in</a></button>
+        <button class="btn"><a href="#login">Login</a></button>
+        <button class="btn2"><a href="signin">Sign in</a></button>
+        <div class="hamburger" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <section class="home" id="home" onclick="goTopage('home')">
         <div class="home-text">
             <h1>The best collection furniture is here.</h1>
-            <p>Change your view to realize a neat and aesthetic corner of the<br>house and amaze everyone, especially your muclear family.<br> Make every moment of your equiment a valuable item.</p>
+            <p>Change your view to realize a neat and aesthetic corner of the house and amaze everyone, especially
+                your muclear family. Make every moment of your equiment a valuable item.</p>
             <a href="explore" class="btn btn-primary">Explore Now</a>
         </div>
     </section>
 
     <section class="product" id="products" onclick="goTopage('products')">
         <div class="img">
-            <img src="chair.webp">
+            <img src="./images/chair.webp">
         </div>
 
         <div class="product-text">
             <h2>All furniture available here.</h2>
-            <p>We all in one furniture provide custom designing furniture.<br> Like chair, Bed, Wall mounted bed and Dining table</p>
+            <p>We all in one furniture provide custom designing furniture. Like chair, Bed, Wall mounted bed and Dining
+                table</p>
             <a href="seeallfurnitures" class="btn btn-primary">See all furnitures</a>
         </div>
     </section>
-    
+
     <section class="about" id="about" onclick="goTopage('about')">
         <div class="img">
-            <img src="sofa.webp">
+            <img src="./images/sofa.webp">
         </div>
 
         <div class="about-text">
             <h3>Furniture is important part for content.</h3>
-            <p>we believe that furniture is more than just function.<br>It’s the foundation of your home’s personality.<br>That’s why we’re passionate about creating timeless,<br> high-quality pieces that bring comfort, style, and meaning into your space.</p>
+            <p>
+                We believe that furniture is more than just function. It’s the foundation of your home’s personality.
+                That’s why we’re passionate about creating timeless,
+                high-quality pieces that bring comfort, style, and meaning into your space.
+            </p>
             <a href="learnmore" class="btn btn-primary">Learn more</a>
         </div>
     </section>
 
     <section class="contact" id="contactus" onclick="goTopage('contactus')">
         <div class="img">
-            <img src="nightstand light.jpg">
+            <img src="./images/nightstandlight.jpg">
         </div>
-             <h4>Contact us and get your deal of choice.</h4> 
-             <P>Get the information to start decorating your home with us.<br>Furnik makes it easier to do what you do best create.<br>Find answers to your problems or get specific help.</P>         
-         <div class="contact-box">   
-             <input type="text" placeholder="Enter Here">
-             <a href="contactus" class="button">Contact Us</a>
+        <h4>Contact us and get your deal of choice.</h4>
+        <P>
+            Get the information to start decorating your home with us. Furnik makes it easier to do what you do best
+            create. Find answers to your problems or get specific help.
+        </P>
+        <div class="contact-box">
+            <input type="text" placeholder="Enter Here">
+            <a href="contactus" class="button">Contact Us</a>
         </div>
     </section>
 
@@ -77,36 +94,38 @@
             </div>
         </div>
         <div class="footer-content">
-                <h4>Quick Link<div class="underline"><span></span></div></h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>About</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-            <div class="footer-content">
-                <h4>Brands <div class="underline"><span></span></h4>
-                <ul>
-                    <li>Godrej Interio</li>
-                    <li>HomwTown</li>
-                    <li>Stanley</li>
-                    <li>Nilkamal</li>
-                    <li>WoodenStreet</li>
-                </ul>
-            </div>
-            <div class="footer-content">
-                <h4>Categories <div class="underline"><span></span></h4>
-                <ul>
-                    <li>Chair</li>
-                    <li>Bed</li>
-                    <li>Dinning Table</li>
-                    <li>Desk</li>
-                    <li>Nightstand Light</li>
-                </ul>
-            </div>
+            <h4>Quick Link<div class="underline"><span></span></div>
+            </h4>
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
         </div>
-    </footer>
-    <script> src="furniture.js" </script>
+        <div class="footer-content">
+            <h4>Brands <div class="underline"><span></span></h4>
+            <ul>
+                <li>Godrej Interio</li>
+                <li>HomwTown</li>
+                <li>Stanley</li>
+                <li>Nilkamal</li>
+                <li>WoodenStreet</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Categories <div class="underline"><span></span></h4>
+            <ul>
+                <li>Chair</li>
+                <li>Bed</li>
+                <li>Dinning Table</li>
+                <li>Desk</li>
+                <li>Nightstand Light</li>
+            </ul>
+        </div>
+        </div>
+        </footer>
+        <script src="furniture.js"></script>
 </body>
+
 </html>
